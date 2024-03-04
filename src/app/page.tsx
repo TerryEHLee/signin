@@ -34,7 +34,15 @@ const CardWithForm = () => {
             <div className='grid w-full items-center gap-4'>
               <div className='flex flex-col space-y-1.5'>
                 <Label htmlFor='name'>이름</Label>
-                <Input id='name' placeholder='이태리' />
+                <Input id='name' placeholder='이름을 입력하세요' />
+              </div>
+              <div className='flex flex-col space-y-1.5'>
+                <Label htmlFor='name'>이메일</Label>
+                <Input id='name' placeholder='이메일을 입력하세요' />
+              </div>
+              <div className='flex flex-col space-y-1.5'>
+                <Label htmlFor='name'>연락처</Label>
+                <Input id='name' placeholder='연락처를 입력하세요' />
               </div>
               <div className='flex flex-col space-y-1.5'>
                 <Label htmlFor='framework'>역할</Label>
