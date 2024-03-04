@@ -62,11 +62,18 @@ const CardWithForm = () => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+
       <Card className='w-[350px]'>
         <CardHeader>
           <CardTitle>계정 생성</CardTitle>
           <CardDescription>필수정보 입력</CardDescription>
         </CardHeader>
+
+        {/* <Carousel className='w-full max-w-xs'>
+          <CarouselContent>
+            {Array.from({ length: 2 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <div className='p-1'> */}
         <CardContent>
           <form>
             <div className='grid w-full items-center gap-4'>
@@ -97,8 +104,46 @@ const CardWithForm = () => {
             </div>
           </form>
         </CardContent>
-        <CardFooter className='flex justify-between'>
+        {/* </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel> */}
+
+        <CardFooter className='flex '>
           <Button variant='outline'>다음 단계로 👉🏻 </Button>
+        </CardFooter>
+      </Card>
+
+      <Card className='w-[350px]'>
+        <CardHeader>
+          <CardTitle>계정 생성</CardTitle>
+          <CardDescription>필수정보 입력</CardDescription>
+        </CardHeader>
+
+        <CardContent>
+          <form>
+            <div className='grid w-full items-center gap-4'>
+              <div className='flex flex-col space-y-1.5'>
+                <Label htmlFor='name'>비밀번호</Label>
+                <Input id='name' placeholder='비밀번호를 입력하세요' />
+              </div>
+              <div className='flex flex-col space-y-1.5'>
+                <Label htmlFor='name'>비밀번호 확인</Label>
+                <Input
+                  id='name'
+                  placeholder='위에 입력하신 비밀번호를 입력하세요'
+                />
+              </div>
+            </div>
+          </form>
+        </CardContent>
+
+        <CardFooter className='flex'>
+          <Button variant='outline'>계정 등록하기</Button>
+          <Button variant='outline'>👈🏻 이전 단계로</Button>
         </CardFooter>
       </Card>
     </>
